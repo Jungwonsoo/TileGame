@@ -33,6 +33,13 @@
 		CB7F223716A9E4D6005A4A80 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7F223616A9E4D6005A4A80 /* IntroLayer.m */; };
 		CB7F233916A9F0CF005A4A80 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7F22C016A9F0A7005A4A80 /* libcocos2d.a */; };
 		CB7F233A16A9F0CF005A4A80 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7F22C416A9F0A7005A4A80 /* libCocosDenshion.a */; };
+		CB7F235D16AAFCCC005A4A80 /* hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235616AAFCCC005A4A80 /* hit.caf */; };
+		CB7F235E16AAFCCC005A4A80 /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235716AAFCCC005A4A80 /* meta_tiles.png */; };
+		CB7F235F16AAFCCC005A4A80 /* move.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235816AAFCCC005A4A80 /* move.caf */; };
+		CB7F236016AAFCCC005A4A80 /* pickup.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235916AAFCCC005A4A80 /* pickup.caf */; };
+		CB7F236116AAFCCC005A4A80 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235A16AAFCCC005A4A80 /* Player.png */; };
+		CB7F236216AAFCCC005A4A80 /* TileMap.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235B16AAFCCC005A4A80 /* TileMap.caf */; };
+		CB7F236316AAFCCC005A4A80 /* tmw_desert_spacing.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7F235C16AAFCCC005A4A80 /* tmw_desert_spacing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -518,6 +525,13 @@
 		CB7F223516A9E4D6005A4A80 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		CB7F223616A9E4D6005A4A80 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		CB7F223D16A9F0A5005A4A80 /* cocos2d-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-ios.xcodeproj"; path = "../Downloads/cocos2d-iphone-2.1-beta4/cocos2d-ios.xcodeproj"; sourceTree = "<group>"; };
+		CB7F235616AAFCCC005A4A80 /* hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.caf; sourceTree = "<group>"; };
+		CB7F235716AAFCCC005A4A80 /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meta_tiles.png; sourceTree = "<group>"; };
+		CB7F235816AAFCCC005A4A80 /* move.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = move.caf; sourceTree = "<group>"; };
+		CB7F235916AAFCCC005A4A80 /* pickup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pickup.caf; sourceTree = "<group>"; };
+		CB7F235A16AAFCCC005A4A80 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		CB7F235B16AAFCCC005A4A80 /* TileMap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TileMap.caf; sourceTree = "<group>"; };
+		CB7F235C16AAFCCC005A4A80 /* tmw_desert_spacing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmw_desert_spacing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -594,6 +608,13 @@
 		CB7F20A916A9E4D4005A4A80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CB7F235616AAFCCC005A4A80 /* hit.caf */,
+				CB7F235716AAFCCC005A4A80 /* meta_tiles.png */,
+				CB7F235816AAFCCC005A4A80 /* move.caf */,
+				CB7F235916AAFCCC005A4A80 /* pickup.caf */,
+				CB7F235A16AAFCCC005A4A80 /* Player.png */,
+				CB7F235B16AAFCCC005A4A80 /* TileMap.caf */,
+				CB7F235C16AAFCCC005A4A80 /* tmw_desert_spacing.png */,
 				CB7F20AA16A9E4D4005A4A80 /* Default.png */,
 				CB7F20AC16A9E4D4005A4A80 /* Default@2x.png */,
 				CB7F20AE16A9E4D4005A4A80 /* Default-568h@2x.png */,
@@ -1209,6 +1230,13 @@
 				CB7F20BB16A9E4D4005A4A80 /* Icon.png in Resources */,
 				CB7F20BD16A9E4D4005A4A80 /* Icon@2x.png in Resources */,
 				CB7F20C016A9E4D4005A4A80 /* iTunesArtwork in Resources */,
+				CB7F235D16AAFCCC005A4A80 /* hit.caf in Resources */,
+				CB7F235E16AAFCCC005A4A80 /* meta_tiles.png in Resources */,
+				CB7F235F16AAFCCC005A4A80 /* move.caf in Resources */,
+				CB7F236016AAFCCC005A4A80 /* pickup.caf in Resources */,
+				CB7F236116AAFCCC005A4A80 /* Player.png in Resources */,
+				CB7F236216AAFCCC005A4A80 /* TileMap.caf in Resources */,
+				CB7F236316AAFCCC005A4A80 /* tmw_desert_spacing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
