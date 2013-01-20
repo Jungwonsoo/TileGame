@@ -1,5 +1,6 @@
 #import "HelloWorldLayer.h"
 #import "AppDelegate.h"
+#import "SimpleAudioEngine.h"
 
 @implementation HudLayer
 {
@@ -71,6 +72,12 @@
 {
 	if( (self=[super init]) ) {
         
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"pickup.caf"];
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"hit.caf"];
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"move.caf"];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"TileMap.caf"];
+
+        
         self.tileMap = [CCTMXTiledMap tiledMapWithTMXFile:@"TileMap.tmx"];
         self.background = [_tileMap layerNamed:@"Background"];
         self.foreground = [_tileMap layerNamed:@"Foreground"];
@@ -134,12 +141,14 @@
         if (properties) {
             NSString *collision = properties[@"Collidable"];
             if (collision && [collision isEqualToString:@"True"]) {
+                [[SimpleAudioEngine sharedEngine] playEffect:@"hit.caf"];
                 return;
             }
         }
         
         NSString *collectible = properties[@"Collectable"];
         if (collectible && [collectible isEqualToString:@"True"]) {
+            [[SimpleAudioEngine sharedEngine] playEffect:@"pickup.caf"];
             [_meta removeTileAt:tileCoord];
             [_foreground removeTileAt:tileCoord];
             self.numCollected++;
@@ -147,6 +156,7 @@
         }
 
     }
+    [[SimpleAudioEngine sharedEngine] playEffect:@"move.caf"];
     _player.position = position;    
 }
 
