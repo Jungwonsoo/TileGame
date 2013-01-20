@@ -1366,6 +1366,7 @@
 				CB7F223C16A9E4D6005A4A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
