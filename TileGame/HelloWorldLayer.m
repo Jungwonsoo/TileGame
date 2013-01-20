@@ -7,6 +7,7 @@
 @property (strong) CCTMXLayer *background;
 @property (strong) CCSprite *player;
 @property (strong) CCTMXLayer *meta;
+@property (strong) CCTMXLayer *foreground;
 
 @end
 
@@ -38,6 +39,7 @@
         
         self.tileMap = [CCTMXTiledMap tiledMapWithTMXFile:@"TileMap.tmx"];
         self.background = [_tileMap layerNamed:@"Background"];
+        self.foreground = [_tileMap layerNamed:@"Foreground"];
         self.meta = [_tileMap layerNamed:@"Meta"];
         _meta.visible = NO;
 
@@ -101,6 +103,13 @@
                 return;
             }
         }
+        
+        NSString *collectible = properties[@"Collectable"];
+        if (collectible && [collectible isEqualToString:@"True"]) {
+            [_meta removeTileAt:tileCoord];
+            [_foreground removeTileAt:tileCoord];
+        }
+
     }
     _player.position = position;    
 }
