@@ -1,4 +1,4 @@
-TileGame
+TileGame from the upcoming "How To Make a Tile-Based Game with Cocos2D 2.X" series on raywenderlich.com
 ========
 
 TileGame is a cocos2d 2.1 beta4 game created when updating the How To Make a Tile-Based Game with Cocos2D 2.X
